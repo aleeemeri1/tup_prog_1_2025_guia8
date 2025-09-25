@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace EJ1.Models
 {
-    internal interface Iexportable
+    public interface IExportable
     {
+        void Importar(string cadena);
+        string Exportar();
+
+
+
     }
 }

@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace EJ1.Models
 {
-    internal class PatenteException
+    internal class PatenteException : ApplicationException
     {
+        public PatenteException() : base("patente invalida") { }
+
+        public PatenteException(string message) : base(message) { }
     }
 }
